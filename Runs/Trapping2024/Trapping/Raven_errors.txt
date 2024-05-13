@@ -1,0 +1,89 @@
+ADVISORY : Property Class change dated 1925-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1925-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1926-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1926-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1931-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1931-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1934-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1934-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1939-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1939-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1944-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1944-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1945-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1945-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1950-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1950-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1953-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1953-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1958-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1958-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1961-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1961-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1964-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1964-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1964-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1964-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1965-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1965-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1969-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1969-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1970-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1970-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1970-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1970-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1971-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1971-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1973-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1973-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1974-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1974-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1976-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1976-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1977-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1977-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1978-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1978-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1978-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+ADVISORY : Property Class change dated 1978-01-01 occurs before model simulation. All such changes will be processed before time zero, and these changes MUST be input in chronological order.
+WARNING : Property Class change dated 2024-01-01 occurs after model simulation is done; it will not effect results.
+WARNING : Property Class change dated 2024-01-01 occurs after model simulation is done; it will not effect results.
+WARNING : Property Class change dated 2024-01-01 occurs after model simulation is done; it will not effect results.
+WARNING : Property Class change dated 2024-01-01 occurs after model simulation is done; it will not effect results.
+WARNING : Property Class change dated 2024-01-01 occurs after model simulation is done; it will not effect results.
+WARNING : Property Class change dated 2024-01-01 occurs after model simulation is done; it will not effect results.
+WARNING : Property Class change dated 2025-01-01 occurs after model simulation is done; it will not effect results.
+WARNING : Property Class change dated 2025-01-01 occurs after model simulation is done; it will not effect results.
+ADVISORY : The required parameter SVF_EXTINCTION for vegetation class ALPINE was autogenerated with value 0.500000
+ADVISORY : The required parameter ALBEDO for vegetation class ALPINE was autogenerated with value 0.140000
+ADVISORY : The required parameter MAX_SNOW_LOAD for vegetation class ALPINE was autogenerated with value 6.000000
+ADVISORY : The required parameter SVF_EXTINCTION for vegetation class FOREST_BURN was autogenerated with value 0.500000
+ADVISORY : The required parameter ALBEDO for vegetation class FOREST_BURN was autogenerated with value 0.140000
+ADVISORY : The required parameter MAX_SNOW_LOAD for vegetation class FOREST_BURN was autogenerated with value 6.000000
+ADVISORY : The required parameter SVF_EXTINCTION for vegetation class FOREST_CUTBLOCK was autogenerated with value 0.500000
+ADVISORY : The required parameter ALBEDO for vegetation class FOREST_CUTBLOCK was autogenerated with value 0.140000
+ADVISORY : The required parameter MAX_SNOW_LOAD for vegetation class FOREST_CUTBLOCK was autogenerated with value 6.000000
+ADVISORY : The required parameter SVF_EXTINCTION for vegetation class FOREST_ESSF was autogenerated with value 0.500000
+ADVISORY : The required parameter ALBEDO for vegetation class FOREST_ESSF was autogenerated with value 0.140000
+ADVISORY : The required parameter MAX_SNOW_LOAD for vegetation class FOREST_ESSF was autogenerated with value 6.000000
+ADVISORY : The required parameter SVF_EXTINCTION for vegetation class FOREST_IDF was autogenerated with value 0.500000
+ADVISORY : The required parameter ALBEDO for vegetation class FOREST_IDF was autogenerated with value 0.140000
+ADVISORY : The required parameter MAX_SNOW_LOAD for vegetation class FOREST_IDF was autogenerated with value 6.000000
+ADVISORY : The required parameter SVF_EXTINCTION for vegetation class FOREST_JUVENILE was autogenerated with value 0.500000
+ADVISORY : The required parameter ALBEDO for vegetation class FOREST_JUVENILE was autogenerated with value 0.140000
+ADVISORY : The required parameter MAX_SNOW_LOAD for vegetation class FOREST_JUVENILE was autogenerated with value 6.000000
+ADVISORY : The required parameter SVF_EXTINCTION for vegetation class FOREST_MS was autogenerated with value 0.500000
+ADVISORY : The required parameter ALBEDO for vegetation class FOREST_MS was autogenerated with value 0.140000
+ADVISORY : The required parameter MAX_SNOW_LOAD for vegetation class FOREST_MS was autogenerated with value 6.000000
+ADVISORY : The required parameter SVF_EXTINCTION for vegetation class SHRUB was autogenerated with value 0.500000
+ADVISORY : The required parameter ALBEDO for vegetation class SHRUB was autogenerated with value 0.140000
+ADVISORY : The required parameter MAX_SNOW_LOAD for vegetation class SHRUB was autogenerated with value 6.000000
+ADVISORY : The required parameter SVF_EXTINCTION for vegetation class WET_LAND was autogenerated with value 0.500000
+ADVISORY : The required parameter ALBEDO for vegetation class WET_LAND was autogenerated with value 0.140000
+ADVISORY : The required parameter MAX_SNOW_LOAD for vegetation class WET_LAND was autogenerated with value 6.000000
+ADVISORY : The required parameter POROSITY for soil class SOIL was autogenerated with value 0.444900
+ADVISORY : The required parameter FIELD_CAPACITY for soil class SOIL was autogenerated with value 0.293944
+ADVISORY : The required parameter SAT_WILT for soil class SOIL was autogenerated with value 0.176444
+ADVISORY : The required parameter ALBEDO_WET for soil class SOIL was autogenerated with value 0.101000
+ADVISORY : The required parameter ALBEDO_DRY for soil class SOIL was autogenerated with value 0.224000
+WARNING : Initial conditions specified for state variable not in model (GLACIER_ICE)

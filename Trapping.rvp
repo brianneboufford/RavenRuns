@@ -1,0 +1,128 @@
+:FileType rvp ASCII Raven 3.8
+# DataType         Raven Parameters file
+#
+# Template for freebird
+# Generated from freebird template based on Adapted HBV hydro model and KettleBoundary parameter set on 2024-04-12
+# Global parameters
+#---------------------------------------------------------
+:AdiabaticLapseRate   	6
+:TransientParameter PRECIP_LAPSE GLOBALS
+:AnnualCycle 2.5 2.5 2.5 2.5 0.5 0.5 0.5 0.5 0.5 2.5 2.5 2.5
+:EndTransientParameter
+:RainSnowTransition   	3 2
+:IrreducibleSnowSaturation  0.05
+:AvgAnnualRunoff 500
+
+#---------------------------------------------------------
+# Soil classes
+#---------------------------------------------------------
+:SoilClasses
+ :Attributes,		%SAND,	%CLAY,	%SILT,	%ORGANIC
+ :Units,      		none,   none,	none,	none
+SOIL        ,0.35        ,0.3         ,0.35        ,0.2
+:EndSoilClasses
+
+:SoilParameterList
+  :Parameters, HBV_BETA,	MAX_CAP_RISE_RATE,	MAX_PERC_RATE,	BASEFLOW_COEFF,	BASEFLOW_N, MAX_BASEFLOW_RATE
+  :Units     , none,       	mm/d,         	mm/d,      		1/d,			none, 		mm
+SOIL        ,0.05        ,1           ,9           ,0.075       ,1.33        ,25
+:EndSoilParameterList
+
+
+#---------------------------------------------------------
+# Soil profiles
+#---------------------------------------------------------
+:SoilProfiles
+SOIL        ,3           ,SOIL        ,0.1         ,SOIL        ,1           ,SOIL        ,1
+:EndSoilProfiles
+
+
+#---------------------------------------------------------
+# Vegetation classes
+#---------------------------------------------------------
+:VegetationClasses
+ :Attributes,      		MAX_HT, MAX_LAI, MAX_LEAF_COND
+ :Units,          		 m,     none,   	mm_per_s
+ALPINE      , 0.0        ,1           ,0
+FOREST_BURN , 0.5        ,1.5         ,0
+FOREST_CUTBLOCK, 0.5     ,2.5         ,0
+FOREST_ESSF ,15.0        ,3           ,0
+FOREST_IDF  ,15.0        ,3           ,0
+FOREST_JUVENILE, 5.0     ,3.5         ,0
+FOREST_MS   ,15.0        ,3           ,0
+SHRUB       , 1.0        ,4           ,0
+WET_LAND    , 1.0        ,4           ,0
+:EndVegetationClasses
+
+:SeasonalCanopyLAI
+#  NAME, 		Jan Feb	 Mar   Apr May Jun Jul Aug Sep  Oct  Nov  Dec
+[DEFAULT], 		1, 	 1,   1,   1, 	1, 	 1, 1, 	1, 	1, 	 1,   1, 	 1
+FOREST_BURN ,0.5,0.5,0.5,0.8,1,1,1,1,1,0.7,0.5,0.5
+FOREST_CUTBLOCK,0.5,0.5,0.5,0.8,1,1,1,1,1,0.7,0.5,0.5
+WET_LAND    ,0.5,0.5,0.5,0.8,1,1,1,1,1,0.7,0.5,0.5
+SHRUB       ,0.5,0.5,0.5,0.8,1,1,1,1,1,0.7,0.5,0.5
+:EndSeasonalCanopyLAI
+
+:VegetationParameterList
+:Parameters,         MAX_CAPACITY,    MAX_SNOW_CAPACITY,
+:Units     ,         mm,              mm,   
+[DEFAULT],           5,             20
+FOREST_BURN ,_DEFAULT    ,5
+FOREST_CUTBLOCK,_DEFAULT    ,5
+FOREST_JUVENILE,_DEFAULT    ,10
+SHRUB       ,_DEFAULT    ,10
+:EndVegetationParameterList
+
+#---------------------------------------------------------
+# LandUse classes
+#---------------------------------------------------------
+:LandUseClasses
+ :Attributes, 	IMPERM, 	FOREST_COV
+ :Units,      	frac,   	frac
+ALPINE      ,0.00        ,0
+FOREST_BURN ,0.15        ,0.5
+FOREST_CUTBLOCK,0.00     ,0.6
+FOREST_ESSF ,0.00        ,0.8
+FOREST_IDF  ,0.00        ,0.8
+FOREST_JUVENILE,0.00     ,0.85
+FOREST_MS   ,0.00        ,0.8
+SHRUB       ,0.00        ,0.6
+WET_LAND    ,0.25        ,0.5
+:EndLandUseClasses
+
+:LandUseParameterList
+  :Parameters, MELT_FACTOR,	MIN_MELT_FACTOR,  HBV_MELT_FOR_CORR, REFREEZE_FACTOR, HBV_MELT_ASP_CORR, PRIESTLEYTAYLOR_COEFF
+  :Units     ,        mm/d/K,     	mm/d/K,		none,			mm/d/K,				none,               none
+  #           ,     Kmin+DC ,       Kmin,		MRF,			CRFR,				AM
+     [DEFAULT],		3,		1,       1.0,      2,               0.2,       1.25
+FOREST_BURN ,_DEFAULT    ,_DEFAULT    ,_DEFAULT    ,_DEFAULT    ,_DEFAULT    ,1.25
+FOREST_CUTBLOCK,_DEFAULT    ,_DEFAULT    ,_DEFAULT    ,_DEFAULT    ,_DEFAULT    ,1.25
+FOREST_ESSF ,_DEFAULT    ,_DEFAULT    ,0.8         ,_DEFAULT    ,_DEFAULT    ,1
+FOREST_IDF  ,_DEFAULT    ,_DEFAULT    ,0.8         ,_DEFAULT    ,_DEFAULT    ,1.1
+FOREST_JUVENILE,_DEFAULT    ,_DEFAULT    ,0.9         ,_DEFAULT    ,_DEFAULT    ,1.1
+FOREST_MS   ,_DEFAULT    ,_DEFAULT    ,0.8         ,_DEFAULT    ,_DEFAULT    ,1
+:EndLandUseParameterList
+
+# :LandUseParameterList
+# :Parameters, HBV_MELT_GLACIER_CORR,   HBV_GLACIER_KMIN,GLAC_STORAGE_COEFF, HBV_GLACIER_AG
+# :Units     ,                  none,                 ??,              ??,             ??  
+#   #        ,                   MRG,                KG1,         KG1+DKG,             AG 
+#   [DEFAULT],                   1.25,      	     0.5,  		0.5,   		0.15
+# :EndLandUseParameterList
+
+:LandUseParameterList
+:Parameters, LAKE_REL_COEFF, LAKESNOW_BUFFER_HT
+:Units, 
+  [DEFAULT],                   0.05,   30
+:EndLandUseParameterList
+
+################################
+# ————— CHANNEL PROFILES ————- #
+################################
+:RedirectToFile Misc/channelprofiles.rvp
+
+
+################################
+# —————  LANDUSE CHANGE  ————- #
+################################
+:RedirectToFile LandCoverChange/Trapping/RVPList.txt

@@ -1,0 +1,114 @@
+#########################################################################
+:FileType rvi ASCII Raven 3.8
+# DataType         Raven Input File
+#------------------------------------------------------------------------
+# Simulation parameters
+#------------------------------------------------------------------------
+:StartDate           1980-01-01 00:00:00
+:Duration           15706
+
+#------------------------------------------------------------------------
+# Model options
+#------------------------------------------------------------------------
+
+#  Celerity -------------
+:Method              	ORDERED_SERIES
+:CatchmentRoute      	TRIANGULAR_UH
+:Routing	      		ROUTE_DIFFUSIVE_WAVE
+:SoilModel              SOIL_MULTILAYER 3
+# -------------
+
+# Met Decisions -------------
+:Interpolation      	INTERP_INVERSE_DISTANCE
+:MonthlyInterpolationMethod MONTHINT_LINEAR_FOM
+:OroTempCorrect      	OROCORR_HBV
+:OroPrecipCorrect    	OROCORR_SIMPLELAPSE
+:RelativeHumidityMethod RELHUM_DATA
+:RainSnowFraction		RAINSNOW_HBV
+
+# Energy Balance -------------
+:SWRadiationMethod		SW_RAD_DEFAULT
+#:SWCloudCorrect			SW_CLOUD_CORR_DINGMAN
+:SWCanopyCorrect		SW_CANOPY_CORR_STATIC
+
+# Model Processes -------------
+:PotentialMeltMethod 	POTMELT_HBV
+:Evaporation         	PET_PRIESTLEY_TAYLOR
+:OW_Evaporation			PET_PRIESTLEY_TAYLOR
+:PrecipIceptFract    	PRECIP_ICEPT_HEDSTROM
+:LakeStorage            LAKE_STORAGE
+
+
+#------------------------------------------------------------------------
+# Hydrologic process order for HBV-EC Emulation with modified soil routine
+#------------------------------------------------------------------------
+
+:HydrologicProcesses
+  :LakeFreeze             LFREEZE_BASIC
+    :-->Conditional LAND_CLASS IS LAKE
+  :SnowRefreeze      FREEZE_DEGREE_DAY  SNOW_LIQ        SNOW
+  :Precipitation     PRECIP_RAVEN       ATMOS_PRECIP    MULTIPLE 
+  :CanopyEvaporation CANEVP_MAXIMUM   	CANOPY          ATMOSPHERE
+  :CanopySublimation CANEVP_MAXIMUM	   	CANOPY_SNOW     ATMOSPHERE  
+  :SnowBalance       SNOBAL_SIMPLE_MELT	SNOW            SNOW_LIQ  
+    :-->Overflow     RAVEN_DEFAULT      SNOW_LIQ        PONDED_WATER
+#   :Flush             RAVEN_DEFAULT      PONDED_WATER    GLACIER
+#     :-->Conditional HRU_TYPE IS GLACIER
+#   :GlacierMelt       GMELT_HBV          GLACIER_ICE     GLACIER
+#   :GlacierRelease    GRELEASE_HBV_EC    GLACIER         SURFACE_WATER
+  :Infiltration      INF_HBV            PONDED_WATER    MULTIPLE
+  :-->RedirectFlow SURFACE_WATER	SOIL[1]
+    :-->Conditional HRU_TYPE IS_NOT GLACIER
+  :LakeEvaporation   LAKE_EVAP_BASIC    LAKE_STORAGE 	ATMOSPHERE
+    :-->Conditional HRU_TYPE IS LAKE
+  :SoilEvaporation   SOILEVAP_HBV       MULTIPLE         ATMOSPHERE
+  :CapillaryRise     RISE_HBV           SOIL[1]  		SOIL[0]
+# :Percolation       PERC_CONSTANT      SOIL[0] 		SOIL[1]
+  :Percolation       PERC_CONSTANT      SOIL[1]  		SOIL[2]
+  :LakeRelease       LAKEREL_LINEAR     LAKE_STORAGE    SURFACE_WATER
+  :Baseflow          BASE_POWER_LAW    	SOIL[1] 		SURFACE_WATER 
+  :Baseflow          BASE_VIC   		SOIL[2] 		SURFACE_WATER 
+:EndHydrologicProcesses
+
+
+
+
+#---------------------------------------------------------
+# HRU Groups
+#------------------------------------------------------------------------
+# :ApplyManagementOptimization
+
+# Land Cover Change
+:RedirectToFile LandCoverChange/Trapping/HRUList.txt
+
+# Verification Sites
+#:RedirectToFile Misc/HRUList.txt
+ 
+#------------------------------------------------------------------------
+# Transport calculations for estimation of snowmelt and glacier 
+# contributions to runoff
+#------------------------------------------------------------------------
+
+# Glacial Contributions to Streamflow
+# :Transport Glaciers
+# :FixedConcentration Glaciers GLACIER 1.0 GLACIER_All
+
+#---------------------------------------------------------
+# Stream Temperature
+#------------------------------------------------------------------------
+# Heat Transport
+#
+# No Stream Temperature Initialized
+
+#---------------------------------------------------------
+# Output Options
+#------------------------------------------------------------------------
+
+# Met Verification outputs
+#:CustomOutput DAILY AVERAGE TEMP_MAX BY_HRU_GROUP 
+#:CustomOutput DAILY AVERAGE PRECIP BY_HRU_GROUP 
+#:CustomOutput DAILY AVERAGE SNOW BY_HRU_GROUP
+
+
+:EvaluationMetrics PCT_BIAS NASH_SUTCLIFFE LOG_NASH R2 CUMUL_FLOW KLING_GUPTA
+

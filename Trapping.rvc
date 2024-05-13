@@ -1,0 +1,13 @@
+#########################################################################
+:FileType rvc ASCII Raven 3.7
+# DataType         Raven Initial Conditions file
+#---------------------------------------------------------
+
+# Initial basin conditions
+:BasinInitialConditions
+:Attributes, ID,   Q
+:Units,      none, m3/s
+:EndBasinInitialConditions 
+
+# If glacier tracing needed, this is necessary to get non-zero results
+  :UniformInitialConditions GLACIER_ICE 100000

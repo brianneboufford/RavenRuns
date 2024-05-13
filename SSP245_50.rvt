@@ -1,0 +1,30 @@
+#########################################################################
+:FileType rvt ASCII Raven 3.8
+# DataType         Raven Met Station File
+#
+#------------------------------------------------------------------------
+# Date Updated: 2024-05-10
+#------------------------------------------------------------------------
+# --------------
+# Climate Stations List
+# --------------
+#
+:Gauge File1
+:Latitude 49.5527012551988
+:Longitude -118.800389554833
+:Elevation 782
+:RedirectToFile SSP245_50/File1.rvt
+:EndGauge 
+#
+:Gauge File2
+:Latitude 49.714472737133
+:Longitude -118.792300980737
+:Elevation 977
+:RedirectToFile SSP245_50/File2.rvt
+:EndGauge 
+#
+#------------------------------
+# Hydrometric Stations
+#------------------------------
+:RedirectToFile Flow/TRAPPING_CREEK_NEAR_THE_MOUTH_Flow.rvt
+#

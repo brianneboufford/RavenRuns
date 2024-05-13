@@ -1,0 +1,2 @@
+time [d],date,hour,rainfall [mm/day],snowfall [mm/d SWE],Channel Storage [mm],Reservoir Storage [mm],Rivulet Storage [mm],Surface Water [mm],Cum. Losses to Atmosphere [mm],Ponded Water [mm],Soil Water[0] [mm],Soil Water[1] [mm],Soil Water[2] [mm],Net Lake Storage [mm],Snow [mm],Snow Melt (Liquid) [mm],Canopy [mm],Canopy Snow [mm], Total [mm], Cum. Inputs [mm], Cum. Outflow [mm], MB Error [mm]
+0,1980-01-01,00:00:00.00,---,---,0.291338,0,1.36893,0,0,0,0,0,0,0,0,0,0,0,1.66026,0,0,0
